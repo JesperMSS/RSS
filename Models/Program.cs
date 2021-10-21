@@ -8,6 +8,7 @@ namespace Models
         {
             Console.WriteLine("Hello World!");
             Console.WriteLine("Testing github");
+            Console.WriteLine("Anton är inte från balkan");
         }
     }
 }
