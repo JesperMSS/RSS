@@ -2,17 +2,12 @@
   <MonoDevelop.Ide.ItemProperties.PL PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Models/Program.cs">
     <Files>
-      <File FileName="Models/Program.cs" Line="10" Column="30" />
+      <File FileName="Models/Program.cs" Line="15" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="RSS" expanded="True">
-            <Node name="Models" expanded="True">
-              <Node name="Program.cs" selected="True" />
-            </Node>
-            <Node name="PL" expanded="True" />
-          </Node>
+          <Node name="RSS" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
