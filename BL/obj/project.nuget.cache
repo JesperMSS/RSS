@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "XF0BYtKnNwqVMBAsvPlJHRitv3pWJKsJNlH0a1iBWYsHPGYzUwIM5C5qU66khPqqVWq5V1gMRN9X8+uL7dkBnQ==",
+  "dgSpecHash": "OGVO0P2zPpEEw1Tb0bUU8BKHU5sQY5dqKYcDW7anwqYkFA1DNwotq3+QVt9AmAA1qX3EA7X/ovhGM+goy/l2cw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jesper\\source\\repos\\RSS\\BL\\BL.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\BL\\BL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Anton\\.nuget\\packages\\system.servicemodel.syndication\\5.0.0\\system.servicemodel.syndication.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "YLKFszSwEtdWiwTD77bKSROAoMpjiN1NphgFWWHxMGFHrs9JydBcQribTtfTWQHbKJa3gEdsPWJLfbm4UBfiKg==",
+  "dgSpecHash": "RPh9aWlUf7X5oUcKBSorWvs6y0pMjNhk8Jn+YP+xXKoywHZk7uDSToDxb+t0oKUUthxtjdDApEHhFWxdWprDZw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jesper\\source\\repos\\RSS\\PL\\PL.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\PL\\PL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Anton\\.nuget\\packages\\system.servicemodel.syndication\\5.0.0\\system.servicemodel.syndication.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
