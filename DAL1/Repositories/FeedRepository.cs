@@ -11,7 +11,7 @@ namespace DAL.Repositories
     {
 
 
-        public  getAllEpisodes()
+        public List<Episode> getAllEpisodes()
         {
 
             XmlReader rssReader = XmlReader.Create(@"http://www.svt.se/nyheter/rss.xml");
@@ -19,10 +19,13 @@ namespace DAL.Repositories
 
             List<Episode> allEpisodes = new List<Episode>();
             
-            foreach(Episode episode in allEpisodes)
+            foreach(var item in rssFeed.Items)
             {
-                string Title = 
+                Episode episode = new Episode(item.Title.Text);
+                episode.Description = item.Summary.Text;
+                allEpisodes.Add(episode);
             }
+            return allEpisodes;
         }
 
     }
