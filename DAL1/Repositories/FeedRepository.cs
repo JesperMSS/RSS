@@ -17,7 +17,7 @@ namespace DAL.Repositories
 
             List<Episode> allEpisodes = new List<Episode>();
 
-            foreach (Episode item in rssFeed.Items)
+            foreach (var item in rssFeed.Items)
             {
                 Episode episode = new Episode(item.Title.Text);
                 episode.Description = item.Summary.Text;
