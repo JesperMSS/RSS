@@ -2,30 +2,20 @@
 using System.IO;
 using System.Collections.Generic;
 using System;
+using Models;
 namespace DAL
 {
     public class DataManager
     {
-
-        static void Main(string[] args) { 
-                DerializeFiles();
-        }
-
-        /*
-         public List<Feed> DerializeFiles()
+        public void SerializeFiles(List<Feed> listofFeeds)
         {
-            List<Feed> listofFeeds;
-            XmlSerializer serializer = new XmlSerializer(typeof(List<Feed>);
-
-            using (Stream reader = new FileStream("feeds.xml", FileMode.Open, FileAccess.Read))
+            XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Feed>));
+            using (FileStream reader = new FileStream("feeds.xml", FileMode.Create, FileAccess.Write))
             {
-                listofFeeds = (List<Feeds>)serializer.Deserialze(reader);
+                xmlSerializer.Serialize(reader, listofFeeds);
             }
         }
-        */
-
-
-        public static void DerializeFiles()
+            public void DerializeFiles()
             {
                 List<string> itemsInXML;
                 XmlSerializer serilizer = new XmlSerializer(typeof(List<string>));
@@ -40,8 +30,5 @@ namespace DAL
                     Console.WriteLine(item);
                 }
             }
-        
-
-
     }
-    }
+}
