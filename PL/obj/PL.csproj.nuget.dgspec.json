@@ -88,7 +88,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\Models\\Models.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
