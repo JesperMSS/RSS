@@ -19,7 +19,7 @@ namespace DAL.Repositories
 
             foreach (Episode item in rssFeed.Items)
             {
-                Episode episode = new Episode(item.Title.Text):
+                Episode episode = new Episode(item.Title.Text);
                 episode.Description = item.Summary.Text;
                 allEpisodes.Add(episode);
             }
