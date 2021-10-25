@@ -40,8 +40,7 @@ namespace DAL
                     Console.WriteLine(item);
                 }
             }
-        XmlReader rssReader = XmlReader.Create(@"http://www.svt.se/nyheter/rss.xml");
-        SyndicationFeed rssFeed = SyndicationFeed.Load(rssReader);
+        
 
 
     }
