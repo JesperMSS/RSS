@@ -15,20 +15,17 @@ namespace DAL
                 xmlSerializer.Serialize(reader, listofFeeds);
             }
         }
-            public void DerializeFiles()
-            {
-                List<string> itemsInXML;
-                XmlSerializer serilizer = new XmlSerializer(typeof(List<string>));
+            public List<Feed> DerializeFiles()
+        {
+                List<Feed> itemsInXML;
+                XmlSerializer serilizer = new XmlSerializer(typeof(List<Feed>));
 
                 using (Stream reader = new FileStream("feeds.xml", FileMode.Open, FileAccess.Read))
                 {
-                    itemsInXML = (List<string>)serilizer.Deserialize(reader);
+                    itemsInXML = (List<Feed>)serilizer.Deserialize(reader);
                 }
 
-                foreach (String item in itemsInXML)
-                {
-                    Console.WriteLine(item);
-                }
+            return itemsInXML;
             }
     }
 }
