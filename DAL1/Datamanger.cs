@@ -5,7 +5,11 @@ using System;
 using Models;
 namespace DAL
 {
+<<<<<<< Updated upstream
     public class DataManager
+=======
+    internal class DataManager
+>>>>>>> Stashed changes
     {
         public void SerializeFiles(List<Feed> listofFeeds)
         {
@@ -17,21 +21,41 @@ namespace DAL
                 }
             
         }
+<<<<<<< Updated upstream
         public void DerializeFiles()
         {
             List<string> itemsInXML;
             XmlSerializer serilizer = new XmlSerializer(typeof(List<string>));
+=======
 
-            using (Stream reader = new FileStream("feeds.xml", FileMode.Open, FileAccess.Read))
+        
+         public void SerializeFiles(List<Feed> listofFeeds)
+        {
+     
+            XmlSerializer serializer = new XmlSerializer(typeof(List<Feed>);
+>>>>>>> Stashed changes
+
+            using (Stream reader = new FileStream("feeds.xml", FileMode.Create, FileAccess.Write)
             {
+<<<<<<< Updated upstream
                itemsInXML = (List<string>)serilizer.Deserialize(reader);
              }
+=======
+                serializer.Serialize(reader, listofFeeds)
+            }
+        }
+        
+
+>>>>>>> Stashed changes
 
             foreach (String item in itemsInXML)
             {
                 Console.WriteLine(item);
             }
+<<<<<<< Updated upstream
         }
+=======
+>>>>>>> Stashed changes
        
 
 
