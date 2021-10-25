@@ -1,0 +1,5 @@
+/Users/jonashestreus/Documents/GitHub/RSS/Models/obj/Debug/netcoreapp3.1/Models.csproj.AssemblyReference.cache
+/Users/jonashestreus/Documents/GitHub/RSS/Models/obj/Debug/netcoreapp3.1/Models.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jonashestreus/Documents/GitHub/RSS/Models/obj/Debug/netcoreapp3.1/Models.AssemblyInfoInputs.cache
+/Users/jonashestreus/Documents/GitHub/RSS/Models/obj/Debug/netcoreapp3.1/Models.AssemblyInfo.cs
+/Users/jonashestreus/Documents/GitHub/RSS/Models/obj/Debug/netcoreapp3.1/Models.csproj.CoreCompileInputs.cache

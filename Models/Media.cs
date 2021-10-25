@@ -8,7 +8,7 @@ namespace Models
     }
 
 
-    public virtual string mediaType {
+    public virtual string mediaType() {
         return "Media";
     }
 

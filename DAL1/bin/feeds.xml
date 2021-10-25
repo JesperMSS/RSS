@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <project id="1">
+        <manager id="test">Jesper Sundin</manager>
+        <title id="test1">ORU system</title>
+        <customer>Örebro uni</customer>
+        <startDate>2021-04-02 </startDate>
+        <endDate> 2021-06-3</endDate>
+        <image>Photos/logo_og_sv.png</image>
+        <description>Ett info system till oru med agil utvecklingsmetodik ScrumXP</description>
+    </project>
+    <project id="3">
+        <manager>Jonas Hestreus</manager>
+        <title>MIB</title>
+        <customer>Örebro uni</customer>
+        <startDate>2020-04-15 </startDate>
+        <endDate> 2021-05-05</endDate>
+        <image>Photos/MIB.png</image>
+        <description>Ett system för MIB Örebro</description>
+    </project>
+    <project id="4">
+        <manager>Kristoffer Ragnhammar</manager>
+        <title>Hemsida</title>
+        <customer>Örebro uni</customer>
+        <startDate>2021-08-30 </startDate>
+        <endDate> 2021-09-29</endDate>
+        <image>Photos/WWW.jpg</image>
+        <description>Skapandet av en hemsida i HTML, CSS, Javascript och XML </description>
+    </project>
+    <project id="4">
+        <manager>Anton Strömbom</manager>
+        <title>interaktion design / Sightrunner</title>
+        <customer>Örebro uni</customer>
+        <startDate>2021-05-15 </startDate>
+        <endDate> 2021-06-05</endDate>
+        <image> Photos/sightRunner.png</image>
+        <description>Utvecklade en klocka för springturer</description>
+    </project>
+    <project id="5">
+        <manager>Kristoffer Ragnhammar</manager>
+        <title>DJ på Strömpis</title>
+        <customer>Örebro Kommun</customer>
+        <startDate>2021-05-15 </startDate>
+        <endDate> 2021-05-16</endDate>
+        <image> Photos/DJ.jpg</image>
+        <description>Krille DJa på Strömpis</description>
+    </project>
+
+</root>

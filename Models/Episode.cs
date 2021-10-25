@@ -2,10 +2,11 @@ namespace Models
 {
     public class Episode : Media
     {
-        public string Description { get; set }
+        public string Description { get; set; }
 
-        public Episode()
+        public Episode(string name)
         {
+            this.Name = name;
             string descrption = Description;
         }
 
