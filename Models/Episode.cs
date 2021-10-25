@@ -1,12 +1,13 @@
+using System;
+
 namespace Models
 {
     public class Episode : Media
     {
         public string Description { get; set; }
 
-        public Episode(string name)
+        public Episode()
         {
-            this.Name = name;
             string descrption = Description;
         }
 

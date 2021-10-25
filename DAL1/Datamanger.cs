@@ -2,45 +2,37 @@
 using System.IO;
 using System.Collections.Generic;
 using System;
+using Models;
 namespace DAL
 {
-    public class Datamanger
+    public class DataManager
     {
-
-        static void Main(string[] args) { 
-                DerializeFiles();
-        }
-
-        /*
-         public List<Feed> DerializeFiles()
+        public void SerializeFiles(List<Feed> listofFeeds)
         {
-            List<Feed> listofFeeds;
-            XmlSerializer serializer = new XmlSerializer(typeof(List<Feed>);
+            
+                XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Feed>));
+                using (FileStream reader = new FileStream("feeds.xml", FileMode.Create, FileAccess.Write))
+                {
+                    xmlSerializer.Serialize(reader, listofFeeds);
+                }
+            
+        }
+        public void DerializeFiles()
+        {
+            List<string> itemsInXML;
+            XmlSerializer serilizer = new XmlSerializer(typeof(List<string>));
 
             using (Stream reader = new FileStream("feeds.xml", FileMode.Open, FileAccess.Read))
             {
-                listofFeeds = (List<Feeds>)serializer.Deserialze(reader);
+               itemsInXML = (List<string>)serilizer.Deserialize(reader);
+             }
+
+            foreach (String item in itemsInXML)
+            {
+                Console.WriteLine(item);
             }
         }
-        */
-
-
-        public static void DerializeFiles()
-            {
-                List<string> itemsInXML;
-                XmlSerializer serilizer = new XmlSerializer(typeof(List<string>));
-
-                using (Stream reader = new FileStream("feeds.xml", FileMode.Open, FileAccess.Read))
-                {
-                    itemsInXML = (List<string>)serilizer.Deserialize(reader);
-                }
-
-                foreach (String item in itemsInXML)
-                {
-                    Console.WriteLine(item);
-                }
-            }
-        
+       
 
 
     }

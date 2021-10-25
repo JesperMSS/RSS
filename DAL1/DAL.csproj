@@ -11,5 +11,8 @@
   <ItemGroup>
     <ProjectReference Include="..\Models\Models.csproj" />
   </ItemGroup>
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 </Project>

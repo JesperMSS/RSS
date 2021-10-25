@@ -9,9 +9,7 @@ namespace DAL.Repositories
 {
     class FeedRepository
     {
-
-
-        public  getAllEpisodes()
+        public void getAllEpisodes()
         {
 
             XmlReader rssReader = XmlReader.Create(@"http://www.svt.se/nyheter/rss.xml");
