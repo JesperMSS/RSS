@@ -6,7 +6,11 @@ using Models;
 namespace DAL
 {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     public class DataManager
+=======
+    internal class DataManager
+>>>>>>> Stashed changes
 =======
     internal class DataManager
 >>>>>>> Stashed changes
@@ -38,9 +42,12 @@ namespace DAL
             using (Stream reader = new FileStream("feeds.xml", FileMode.Create, FileAccess.Write)
             {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                itemsInXML = (List<string>)serilizer.Deserialize(reader);
              }
 =======
+=======
+>>>>>>> Stashed changes
                 serializer.Serialize(reader, listofFeeds)
             }
         }
@@ -53,7 +60,10 @@ namespace DAL
                 Console.WriteLine(item);
             }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         }
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
        

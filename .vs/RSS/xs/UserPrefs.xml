@@ -3,14 +3,14 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="DAL1/Datamanger.cs">
     <Files>
       <File FileName="../../../Desktop/csharp/uppgift1.cs" Line="12" Column="17" />
-      <File FileName="Models/Program.cs" Line="13" Column="13" />
-      <File FileName="Models/Media.cs" Line="18" Column="2" />
-      <File FileName="Models/Episode.cs" Line="9" Column="20" />
-      <File FileName="Models/Feed.cs" Line="12" Column="25" />
+      <File FileName="Models/Program.cs" />
+      <File FileName="Models/Media.cs" />
+      <File FileName="Models/Episode.cs" />
+      <File FileName="Models/Feed.cs" />
       <File FileName="PL/Form1.cs" />
       <File FileName="PL/Init.cs" />
-      <File FileName="DAL1/Datamanger.cs" Line="8" Column="29" />
-      <File FileName="DAL1/Repositories/FeedRepository.cs" Line="11" Column="6" />
+      <File FileName="DAL1/Datamanger.cs" Line="8" Column="25" />
+      <File FileName="DAL1/Repositories/FeedRepository.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
