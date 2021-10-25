@@ -1,5 +1,13 @@
+<<<<<<< Updated upstream
 /Users/jonashestreus/Documents/GitHub/RSS/Models/obj/Debug/netcoreapp3.1/Models.csproj.AssemblyReference.cache
 /Users/jonashestreus/Documents/GitHub/RSS/Models/obj/Debug/netcoreapp3.1/Models.GeneratedMSBuildEditorConfig.editorconfig
 /Users/jonashestreus/Documents/GitHub/RSS/Models/obj/Debug/netcoreapp3.1/Models.AssemblyInfoInputs.cache
 /Users/jonashestreus/Documents/GitHub/RSS/Models/obj/Debug/netcoreapp3.1/Models.AssemblyInfo.cs
 /Users/jonashestreus/Documents/GitHub/RSS/Models/obj/Debug/netcoreapp3.1/Models.csproj.CoreCompileInputs.cache
+=======
+C:\Users\Anton\Documents\GitHub\RSS\Models\obj\Debug\netcoreapp3.1\Models.csproj.AssemblyReference.cache
+C:\Users\Anton\Documents\GitHub\RSS\Models\obj\Debug\netcoreapp3.1\Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Anton\Documents\GitHub\RSS\Models\obj\Debug\netcoreapp3.1\Models.AssemblyInfoInputs.cache
+C:\Users\Anton\Documents\GitHub\RSS\Models\obj\Debug\netcoreapp3.1\Models.AssemblyInfo.cs
+C:\Users\Anton\Documents\GitHub\RSS\Models\obj\Debug\netcoreapp3.1\Models.csproj.CoreCompileInputs.cache
+>>>>>>> Stashed changes

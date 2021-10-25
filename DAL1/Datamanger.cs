@@ -1,6 +1,5 @@
 ﻿using System.Xml.Serialization;
 using System.IO;
-using Models;
 using System.Collections.Generic;
 using System;
 namespace DAL
@@ -8,11 +7,9 @@ namespace DAL
     public class Datamanger
     {
 
-        public Datamanger()
-        {
-            DerializeFiles();
+        static void Main(string[] args) { 
+                DerializeFiles();
         }
-
 
         /*
          public List<Feed> DerializeFiles()
@@ -26,19 +23,26 @@ namespace DAL
             }
         }
         */
-        
-        
-        public void DerializeFiles()
-        {
-            List<string> itemsInXML;
-            XmlSerializer serilizer = new XmlSerializer(typeof(List<string>));
 
-            using (Stream reader = new FileStream("feeds.xml", FileMode.Open, FileAccess.Read))
+
+        public static void DerializeFiles()
             {
-                itemsInXML = (List<string>)serilizer.Deserialize(reader);
-            }
+                List<string> itemsInXML;
+                XmlSerializer serilizer = new XmlSerializer(typeof(List<string>));
 
-            Console.Write(itemsInXML);
-        }
+                using (Stream reader = new FileStream("feeds.xml", FileMode.Open, FileAccess.Read))
+                {
+                    itemsInXML = (List<string>)serilizer.Deserialize(reader);
+                }
+
+                foreach (String item in itemsInXML)
+                {
+                    Console.WriteLine(item);
+                }
+            }
+        XmlReader rssReader = XmlReader.Create(@"http://www.svt.se/nyheter/rss.xml");
+        SyndicationFeed rssFeed = SyndicationFeed.Load(rssReader);
+
+
     }
-}
+    }

@@ -1,0 +1,7 @@
+C:\Users\Anton\Documents\GitHub\RSS\PL\obj\Debug\netcoreapp3.1\PL.csproj.AssemblyReference.cache
+C:\Users\Anton\Documents\GitHub\RSS\PL\obj\Debug\netcoreapp3.1\PL.Form1.resources
+C:\Users\Anton\Documents\GitHub\RSS\PL\obj\Debug\netcoreapp3.1\PL.csproj.GenerateResource.cache
+C:\Users\Anton\Documents\GitHub\RSS\PL\obj\Debug\netcoreapp3.1\PL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Anton\Documents\GitHub\RSS\PL\obj\Debug\netcoreapp3.1\PL.AssemblyInfoInputs.cache
+C:\Users\Anton\Documents\GitHub\RSS\PL\obj\Debug\netcoreapp3.1\PL.AssemblyInfo.cs
+C:\Users\Anton\Documents\GitHub\RSS\PL\obj\Debug\netcoreapp3.1\PL.csproj.CoreCompileInputs.cache

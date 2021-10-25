@@ -10,16 +10,6 @@
         "runtime": {
           "lib/netstandard2.0/System.ServiceModel.Syndication.dll": {}
         }
-      },
-      "Models/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "compile": {
-          "bin/placeholder/Models.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Models.dll": {}
-        }
       }
     }
   },
@@ -51,16 +41,10 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "Models/1.0.0": {
-      "type": "project",
-      "path": "../Models/Models.csproj",
-      "msbuildProject": "../Models/Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Models >= 1.0.0",
       "System.ServiceModel.Syndication >= 5.0.0"
     ]
   },
@@ -90,11 +74,7 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {
-            "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\Models\\Models.csproj": {
-              "projectPath": "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\Models\\Models.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
