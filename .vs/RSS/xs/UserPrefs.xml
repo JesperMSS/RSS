@@ -1,26 +1,33 @@
 ﻿<Properties StartupConfiguration="{FB7A8801-EC2C-4A55-95EB-D77D8BF542ED}|Default">
   <MonoDevelop.Ide.ItemProperties.PL PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DAL1/Repositories/FeedRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DAL1/Datamanger.cs">
     <Files>
       <File FileName="../../../Desktop/csharp/uppgift1.cs" Line="12" Column="17" />
-      <File FileName="Models/Program.cs" />
+      <File FileName="Models/Program.cs" Line="13" Column="13" />
       <File FileName="Models/Media.cs" />
       <File FileName="Models/Episode.cs" />
-      <File FileName="Models/Feed.cs" />
+      <File FileName="Models/Feed.cs" Line="12" Column="25" />
       <File FileName="PL/Form1.cs" />
       <File FileName="PL/Init.cs" />
-      <File FileName="DAL1/Datamanger.cs" Line="37" Column="1" />
-      <File FileName="DAL1/Repositories/FeedRepository.cs" Line="1" Column="1" />
+<<<<<<< HEAD
+      <File FileName="DAL1/Datamanger.cs" Line="8" Column="25" />
+      <File FileName="DAL1/Repositories/FeedRepository.cs" />
+=======
+      <File FileName="DAL1/IF.cs" />
+      <File FileName="DAL1/Datamanger.cs" Line="42" Column="10" />
+>>>>>>> parent of b52a98d (Merge branch 'main' of https://github.com/JesperMSS/RSS)
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
+<<<<<<< HEAD
           <Node name="RSS" expanded="True">
-            <Node name="DAL" expanded="True">
-              <Node name="Repositories" expanded="True">
-                <Node name="FeedRepository.cs" selected="True" />
-              </Node>
-            </Node>
+            <Node name="DAL" selected="True" />
+=======
+          <Node name="RSS" expanded="True" selected="True">
+            <Node name="DAL" expanded="True" />
+            <Node name="Models" expanded="True" />
+>>>>>>> parent of b52a98d (Merge branch 'main' of https://github.com/JesperMSS/RSS)
           </Node>
         </State>
       </Pad>

@@ -2,45 +2,71 @@
 using System.IO;
 using System.Collections.Generic;
 using System;
+using Models;
 namespace DAL
 {
-    public class Datamanger
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    public class DataManager
+=======
+    internal class DataManager
+>>>>>>> Stashed changes
+=======
+    internal class DataManager
+>>>>>>> Stashed changes
     {
-
-        static void Main(string[] args) { 
-                DerializeFiles();
-        }
-
-        /*
-         public List<Feed> DerializeFiles()
+        public void SerializeFiles(List<Feed> listofFeeds)
         {
-            List<Feed> listofFeeds;
-            XmlSerializer serializer = new XmlSerializer(typeof(List<Feed>);
+            
+                XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Feed>));
+                using (FileStream reader = new FileStream("feeds.xml", FileMode.Create, FileAccess.Write))
+                {
+                    xmlSerializer.Serialize(reader, listofFeeds);
+                }
+            
+        }
+<<<<<<< Updated upstream
+        public void DerializeFiles()
+        {
+            List<string> itemsInXML;
+            XmlSerializer serilizer = new XmlSerializer(typeof(List<string>));
+=======
 
-            using (Stream reader = new FileStream("feeds.xml", FileMode.Open, FileAccess.Read))
+        
+         public void SerializeFiles(List<Feed> listofFeeds)
+        {
+     
+            XmlSerializer serializer = new XmlSerializer(typeof(List<Feed>);
+>>>>>>> Stashed changes
+
+            using (Stream reader = new FileStream("feeds.xml", FileMode.Create, FileAccess.Write)
             {
-                listofFeeds = (List<Feeds>)serializer.Deserialze(reader);
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+               itemsInXML = (List<string>)serilizer.Deserialize(reader);
+             }
+=======
+=======
+>>>>>>> Stashed changes
+                serializer.Serialize(reader, listofFeeds)
             }
         }
-        */
-
-
-        public static void DerializeFiles()
-            {
-                List<string> itemsInXML;
-                XmlSerializer serilizer = new XmlSerializer(typeof(List<string>));
-
-                using (Stream reader = new FileStream("feeds.xml", FileMode.Open, FileAccess.Read))
-                {
-                    itemsInXML = (List<string>)serilizer.Deserialize(reader);
-                }
-
-                foreach (String item in itemsInXML)
-                {
-                    Console.WriteLine(item);
-                }
-            }
         
+
+>>>>>>> Stashed changes
+
+            foreach (String item in itemsInXML)
+            {
+                Console.WriteLine(item);
+            }
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+        }
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+       
 
 
     }
