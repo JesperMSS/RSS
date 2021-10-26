@@ -57,6 +57,7 @@ namespace FiGUI
             foreach(var item in categoryList)
             {
                 categoryBox.Items.Add(item.CategoryName);
+                CategoryCombo.Items.Add(item.CategoryName);
             }
             
 
@@ -65,6 +66,21 @@ namespace FiGUI
         private void categoryBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void CategoryCombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void newBTN_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void saveBTN_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

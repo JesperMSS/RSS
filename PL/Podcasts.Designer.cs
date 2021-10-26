@@ -30,7 +30,6 @@ namespace FiGUI
         private void InitializeComponent()
         {
             this.urlTXT = new System.Windows.Forms.TextBox();
-            this.newBTN = new System.Windows.Forms.Button();
             this.EpisodeLBL = new System.Windows.Forms.Label();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.episodeBox = new System.Windows.Forms.ListBox();
@@ -62,15 +61,6 @@ namespace FiGUI
             this.urlTXT.Name = "urlTXT";
             this.urlTXT.Size = new System.Drawing.Size(206, 23);
             this.urlTXT.TabIndex = 0;
-            // 
-            // newBTN
-            // 
-            this.newBTN.Location = new System.Drawing.Point(273, 261);
-            this.newBTN.Name = "newBTN";
-            this.newBTN.Size = new System.Drawing.Size(84, 23);
-            this.newBTN.TabIndex = 1;
-            this.newBTN.Text = "Ny";
-            this.newBTN.UseVisualStyleBackColor = true;
             // 
             // EpisodeLBL
             // 
@@ -132,8 +122,9 @@ namespace FiGUI
             this.saveBTN.Name = "saveBTN";
             this.saveBTN.Size = new System.Drawing.Size(86, 23);
             this.saveBTN.TabIndex = 8;
-            this.saveBTN.Text = "Spara";
+            this.saveBTN.Text = "Skapa";
             this.saveBTN.UseVisualStyleBackColor = true;
+            this.saveBTN.Click += new System.EventHandler(this.saveBTN_Click);
             // 
             // deleteBTN
             // 
@@ -201,6 +192,7 @@ namespace FiGUI
             this.CategoryCombo.Name = "CategoryCombo";
             this.CategoryCombo.Size = new System.Drawing.Size(121, 23);
             this.CategoryCombo.TabIndex = 15;
+            this.CategoryCombo.SelectedIndexChanged += new System.EventHandler(this.CategoryCombo_SelectedIndexChanged);
             // 
             // updFreqLBL
             // 
@@ -255,7 +247,7 @@ namespace FiGUI
             this.FeedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.27472F));
             this.FeedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.72527F));
             this.FeedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131F));
-            this.FeedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 127F));
+            this.FeedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 129F));
             this.FeedTable.Location = new System.Drawing.Point(54, 73);
             this.FeedTable.Name = "FeedTable";
             this.FeedTable.RowCount = 2;
@@ -321,7 +313,6 @@ namespace FiGUI
             this.Controls.Add(this.episodeBox);
             this.Controls.Add(this.splitter1);
             this.Controls.Add(this.EpisodeLBL);
-            this.Controls.Add(this.newBTN);
             this.Controls.Add(this.urlTXT);
             this.Name = "Podcasts";
             this.Text = "Form1";
@@ -333,7 +324,6 @@ namespace FiGUI
         #endregion
 
         private System.Windows.Forms.TextBox urlTXT;
-        private System.Windows.Forms.Button newBTN;
         private System.Windows.Forms.Label EpisodeLBL;
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.ListBox episodeBox;
