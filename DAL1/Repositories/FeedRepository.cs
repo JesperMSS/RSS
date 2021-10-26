@@ -34,7 +34,20 @@ namespace DAL.Repositories
 
         public List<Feed> GetAll()
         {
-            return dataManager.DerializeFiles();
+            List<Feed> listOfFeedDeserialized = new List<Feed>();
+            try
+            {
+                listOfFeedDeserialized = dataManager.DerializeFiles();
+
+            }
+            catch (Exception)
+            {
+             
+
+            }
+                      
+                return listOfFeedDeserialized;
+            
         }
 
         public Task<List<Episode>> getEpisodes(string url)
