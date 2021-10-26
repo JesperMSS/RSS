@@ -27,11 +27,6 @@ namespace DAL
             {
                 return false;
             }
-
-
-
-
         }
-        
     }
 }
