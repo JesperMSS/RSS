@@ -179,6 +179,7 @@ namespace FiGUI
             this.ctgNewBTN.TabIndex = 11;
             this.ctgNewBTN.Text = "Ny";
             this.ctgNewBTN.UseVisualStyleBackColor = true;
+            this.ctgNewBTN.Click += new System.EventHandler(this.ctgNewBTN_Click);
             // 
             // FreqCombo
             // 
@@ -237,6 +238,7 @@ namespace FiGUI
             this.categoryBox.Name = "categoryBox";
             this.categoryBox.Size = new System.Drawing.Size(237, 169);
             this.categoryBox.TabIndex = 19;
+            this.categoryBox.SelectedIndexChanged += new System.EventHandler(this.categoryBox_SelectedIndexChanged);
             // 
             // epEpisodeLBL
             // 
@@ -253,7 +255,7 @@ namespace FiGUI
             this.FeedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.27472F));
             this.FeedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.72527F));
             this.FeedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131F));
-            this.FeedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 126F));
+            this.FeedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 127F));
             this.FeedTable.Location = new System.Drawing.Point(54, 73);
             this.FeedTable.Name = "FeedTable";
             this.FeedTable.RowCount = 2;

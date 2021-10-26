@@ -7,7 +7,7 @@ namespace BL.Controllers
 {
     public class FeedController
     {
-        IRepository<Feed> feedRepository;
+        IFeedRepositroy<Feed> feedRepository;
         public FeedController()
         {
             feedRepository = new FeedRepository();

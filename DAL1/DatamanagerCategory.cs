@@ -17,16 +17,17 @@ namespace DAL
         }
         public List<Category> DerializeFiles()
         {
-            List<Category> itemsInXML;
-            XmlSerializer serilizer = new XmlSerializer(typeof(List<Category>));
+           
+                List<Category> itemsInXML;
+                XmlSerializer serilizer = new XmlSerializer(typeof(List<Category>));
+                using (FileStream reader = new FileStream("category.xml", FileMode.Open, FileAccess.Read))
+                {
+                    itemsInXML = (List<Category>)serilizer.Deserialize(reader);
+                }
 
-            using (Stream reader = new FileStream("category.xml", FileMode.Open, FileAccess.Read))
-            {
-                itemsInXML = (List<Category>)serilizer.Deserialize(reader);
-            }
-
-            return itemsInXML;
-               
+                return itemsInXML;
+            
+            
         }
     }
 }

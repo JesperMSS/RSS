@@ -12,6 +12,7 @@ namespace DAL.Repositories
         List<Category> listOfCategory;
         public CategoryRepository()
         {
+            listOfCategory = new List<Category>();
             dataManager = new DatamanagerCategory();
             listOfCategory = GetAll();
         }
