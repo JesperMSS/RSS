@@ -6,44 +6,41 @@ using System.Collections.Generic;
 namespace DAL.Repositories
 {
     public class CategoryRepository : ICategoryRepository<Category>
+
     {
         DatamanagerCategory dataManager;
         List<Category> listOfCategory;
-
-
-
         public CategoryRepository()
         {
             dataManager = new DatamanagerCategory();
-            listOfCategory = GetAllCategory();
+            listOfCategory = GetAll();
         }
 
-        public List<Category> GetAllCategory()
+        public List<Category> GetAll()
         {
             List<Category> allCa = new List<Category>();
             allCa = dataManager.DerializeFiles();
             return allCa;
         }
 
-        public void Create(string name)
+        public void Create(Category newCategory)
         {
-            Category category = new(name);
-            listOfCategory.Add(category);
-            SaveCategory();
+            listOfCategory.Add(newCategory);
+            SaveChanges();
 
         }
         public void Delete(int i)
         {
             listOfCategory.RemoveAt(i);
-            SaveCategory();
+            SaveChanges();
         }
 
-        public void SaveCategory()
+        public void SaveChanges()
         {
             dataManager.SerializeFiles(listOfCategory);
 
         }
-        public int GetIndex(string categoryName)
+        public int GetIndexOfName(string categoryName)
         {
             int i = 0;
             foreach (var category in listOfCategory)
@@ -60,7 +57,7 @@ namespace DAL.Repositories
         public void Update(int i, Category updatedCategory)
         {
             listOfCategory[i] = updatedCategory;
-            SaveCategory();
+            SaveChanges();
         }
     }
 }

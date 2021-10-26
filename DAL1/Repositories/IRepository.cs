@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DAL.Repositories
 {
-    interface IRepository<T> where T : class
+    public interface IRepository<T> where T : class
     {
         void Create(T media);
         void Delete(int i);
