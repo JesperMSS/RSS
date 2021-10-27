@@ -45,11 +45,10 @@ namespace DAL.Repositories
         {
             int i = 0;
             foreach (var category in listOfCategory)
-                
             {
                 if (categoryName.Equals(category.CategoryName))
                 {
-                    break;
+                    break ;
                 }
                 i++;
             }
