@@ -8,7 +8,7 @@ namespace Models
             Name = pName;
         }
 
-        protected Media()
+        public Media()
         {
         }
 

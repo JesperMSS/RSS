@@ -50,9 +50,22 @@ namespace DAL.Repositories
             
         }
 
-        public Task<List<Episode>> getEpisodes(string url)
+        public List<Episode> getEpisodes(string url)
         {
-            throw new NotImplementedException();
+
+
+            XmlReader rssReader = XmlReader.Create(url);
+            SyndicationFeed rssFeed = SyndicationFeed.Load(rssReader);
+
+            List<Episode> allEpisodes = new List<Episode>();
+
+            foreach (var item in rssFeed.Items)
+            {
+                Episode episode = new Episode(item.Title.Text);
+                episode.Description = item.Summary.Text;
+                allEpisodes.Add(episode);
+            }
+            return allEpisodes;
         }
 
         public int GetIndexOfCategory(string name)
@@ -78,21 +91,6 @@ namespace DAL.Repositories
             }
             SaveChanges();
         }
-        public List<Episode> getAllEpisodes()
-        {
-
-            XmlReader rssReader = XmlReader.Create(@"http://www.svt.se/nyheter/rss.xml");
-            SyndicationFeed rssFeed = SyndicationFeed.Load(rssReader);
-
-            List<Episode> allEpisodes = new List<Episode>();
-
-            foreach (var item in rssFeed.Items)
-            {
-                Episode episode = new Episode(item.Title.Text);
-                episode.Description = item.Summary.Text;
-                allEpisodes.Add(episode);
-            }
-            return allEpisodes;
-        }
+        
     }
 }

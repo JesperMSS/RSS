@@ -8,12 +8,18 @@ namespace Models
         public string Category { get; set; }
         public List<Episode> Episodes { get; set; }
 
-        public Feed(string pName, string pUrl, string pCategory, List<Episode> pEpisodes) : base()
+
+        public Feed(string pName, string pUrl, string pCategory, List<Episode> pEpisodes, string pFreq) : base()
         {
             Name = pName;
             Url = pUrl;
             Category = pCategory;
             Episodes = pEpisodes;
+            Freq = pFreq;
+
+        }
+        public Feed()
+        {
 
         }
 

@@ -97,6 +97,7 @@ namespace FiGUI
             this.NameLBL.Size = new System.Drawing.Size(40, 15);
             this.NameLBL.TabIndex = 5;
             this.NameLBL.Text = "Namn";
+            this.NameLBL.Click += new System.EventHandler(this.NameLBL_Click);
             // 
             // FreqLBL
             // 
@@ -152,6 +153,7 @@ namespace FiGUI
             this.ctgDeleteBTN.TabIndex = 13;
             this.ctgDeleteBTN.Text = "Ta bort";
             this.ctgDeleteBTN.UseVisualStyleBackColor = true;
+            this.ctgDeleteBTN.Click += new System.EventHandler(this.ctgDeleteBTN_Click_1);
             // 
             // ctgSaveBTN
             // 
@@ -244,16 +246,16 @@ namespace FiGUI
             // FeedTable
             // 
             this.FeedTable.ColumnCount = 4;
-            this.FeedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.27472F));
-            this.FeedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.72527F));
+            this.FeedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.06009F));
+            this.FeedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.93991F));
             this.FeedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131F));
-            this.FeedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 129F));
+            this.FeedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131F));
             this.FeedTable.Location = new System.Drawing.Point(54, 73);
             this.FeedTable.Name = "FeedTable";
             this.FeedTable.RowCount = 2;
             this.FeedTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
             this.FeedTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53F));
-            this.FeedTable.Size = new System.Drawing.Size(496, 123);
+            this.FeedTable.Size = new System.Drawing.Size(496, 120);
             this.FeedTable.TabIndex = 21;
             // 
             // episodeInfoLBL
