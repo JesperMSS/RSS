@@ -1,18 +1,21 @@
-namespace Models {
+﻿namespace Models
+{
+    public abstract class Media
+    {
+        public string Name { get; set; }
 
-
-    public abstract class Media {
-        public string Name { get; set }
-
-        public Media(string name)
+        public Media(string pName)
         {
-            Name = name;
+            Name = pName;
         }
 
+        public Media()
+        {
+        }
 
-        public virtual string mediaType() {
+        public virtual string mediaType()
+        {
             return "Media";
         }
-
     }
 }

@@ -1,22 +1,31 @@
-using System.Xml.Serialization;
+﻿using System.Xml.Serialization;
 using System.IO;
+using System.Collections.Generic;
+using System;
 using Models;
 namespace DAL
 {
-    public class Datamanger
+    public class DataManager
     {
-        public List<Feed> DerializeFiles() 
+        public void SerializeFiles(List<Feed> listofFeeds)
         {
-            List<Feed> listofFeeds;
-            XmlSerializer serializer = new XmlSerializer(typeof(List<Feed>);
+            XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Feed>));
+            using (FileStream reader = new FileStream("feeds.xml", FileMode.Create, FileAccess.Write))
+            {
+                xmlSerializer.Serialize(reader, listofFeeds);
+            }
+        }
+        public List<Feed> DerializeFiles()
+        {
+            List<Feed> itemsInXML;
+            XmlSerializer serilizer = new XmlSerializer(typeof(List<Feed>));
 
             using (Stream reader = new FileStream("feeds.xml", FileMode.Open, FileAccess.Read))
             {
-                listofFeeds = (List<Feeds>)serializer.Deserialze(reader);
+                itemsInXML = (List<Feed>)serilizer.Deserialize(reader);
             }
 
+            return itemsInXML;
         }
-
-
     }
 }
