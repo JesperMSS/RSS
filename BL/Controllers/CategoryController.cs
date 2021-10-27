@@ -4,16 +4,14 @@ using DAL;
 using Models;
 using DAL.Repositories;
 
-
 namespace BL.Controllers
 {
     public class CategoryController
     {
         ICategoryRepository<Category> categoryRepository;
-        Validering validator;
+
         public CategoryController()
         {
-            validator = new Validering();
             categoryRepository = new CategoryRepository();
         }
         public void createCategory(string name)
@@ -27,15 +25,8 @@ namespace BL.Controllers
         }
         public void deleteCategory(string category)
         {
-            if (validator.TextEmpty(category))
-            {
-                int i = categoryRepository.GetIndexOfName(category);
-                categoryRepository.Delete(i);
-            }
-            else
-            {
-                Console.WriteLine("No category");
-            }
+            int i = categoryRepository.GetIndexOfName(category);
+            categoryRepository.Delete(i);
         }
 
         public void updatCategory(Category oldCat, string newCategoryName)

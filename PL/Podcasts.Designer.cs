@@ -152,7 +152,6 @@ namespace FiGUI
             this.ctgDeleteBTN.TabIndex = 13;
             this.ctgDeleteBTN.Text = "Ta bort";
             this.ctgDeleteBTN.UseVisualStyleBackColor = true;
-            this.ctgDeleteBTN.Click += new System.EventHandler(this.ctgDeleteBTN_Click);
             // 
             // ctgSaveBTN
             // 
@@ -248,7 +247,7 @@ namespace FiGUI
             this.FeedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.27472F));
             this.FeedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.72527F));
             this.FeedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131F));
-            this.FeedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
+            this.FeedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 129F));
             this.FeedTable.Location = new System.Drawing.Point(54, 73);
             this.FeedTable.Name = "FeedTable";
             this.FeedTable.RowCount = 2;
