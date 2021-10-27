@@ -11,7 +11,7 @@ using System.Collections;
 using BL.Controllers;
 using Models;
 
-namespace FiGUI
+namespace PL
 {
     public partial class Podcasts : Form
     {
@@ -52,15 +52,13 @@ namespace FiGUI
         }
 
         private void ctgNewBTN_Click(object sender, EventArgs e)
-        {   
-            categoryController.createCategory("1");
-            categoryController.createCategory("2");
-            categoryController.createCategory("3");
-            categoryController.createCategory("4");
-            categoryController.createCategory("5");
+        {
+            string categoryToDelete = categoryBox.GetItemText(categoryBox.SelectedItem);
+            categoryController.deleteCategory(categoryToDelete);
             fillCategory();
             Filltest();
-
+            fillCategory();
+            
 
         }
 
@@ -148,6 +146,12 @@ namespace FiGUI
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void ctgSaveBTN_Click(object sender, EventArgs e)
+        {
+            categoryController.createCategory(ctgSaveTxt.Text);
+            fillCategory();
         }
     }
 }
