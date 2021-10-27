@@ -89,5 +89,22 @@ namespace FiGUI
             categoryController.deleteCategory(categoryToDelete);
             fillCategory();
         }
+        private void fillCategory()
+        {
+            categoryBox.Items.Clear();
+            List<Category> categoryList = categoryController.GetAllCategory();
+            foreach (var item in categoryList)
+            {
+                categoryBox.Items.Add(item.CategoryName);
+                CategoryCombo.Items.Add(item.CategoryName);
+            }
+        }
+
+        private void ctgDeleteBTN_Click(object sender, EventArgs e)
+        {
+            string categoryToDelete = categoryBox.GetItemText(categoryBox.SelectedItem);
+            categoryController.deleteCategory(categoryToDelete);
+            fillCategory();
+        }
     }
 }
