@@ -127,6 +127,7 @@ namespace FiGUI
             feedController.deleteFeedasedOnCategory(categoryToDelete);
             fillCategory();
             Filltest();
+            // NYTT AAAAAA
         }
 
         private void NameLBL_Click(object sender, EventArgs e)
