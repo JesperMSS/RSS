@@ -1,54 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\RSS\\PL\\PL.csproj": {}
+    "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\PL\\PL.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\RSS\\BL\\BL.csproj": {
-      "restore": {
-        "projectUniqueName": "D:\\GitHub\\RSS\\BL\\BL.csproj",
-        "projectName": "BL",
-        "projectPath": "D:\\GitHub\\RSS\\BL\\BL.csproj",
-        "frameworks": {
-          "net472": {
-            "projectReferences": {
-              "D:\\GitHub\\RSS\\Models\\Models.csproj": {
-                "projectPath": "D:\\GitHub\\RSS\\Models\\Models.csproj"
-              }
-            }
-          }
-        }
-      },
-      "frameworks": {
-        "net472": {}
-      }
-    },
-    "D:\\GitHub\\RSS\\Models\\Models.csproj": {
-      "restore": {
-        "projectUniqueName": "D:\\GitHub\\RSS\\Models\\Models.csproj",
-        "projectName": "Models",
-        "projectPath": "D:\\GitHub\\RSS\\Models\\Models.csproj",
-        "frameworks": {
-          "net472": {
-            "projectReferences": {}
-          }
-        }
-      },
-      "frameworks": {
-        "net472": {}
-      }
-    },
-    "D:\\GitHub\\RSS\\PL\\PL.csproj": {
+    "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\BL\\BL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\RSS\\PL\\PL.csproj",
-        "projectName": "PL",
-        "projectPath": "D:\\GitHub\\RSS\\PL\\PL.csproj",
-        "packagesPath": "C:\\Users\\jonas hestreus\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\RSS\\PL\\obj\\",
+        "projectUniqueName": "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\BL\\BL.csproj",
+        "projectName": "BL",
+        "projectPath": "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\BL\\BL.csproj",
+        "packagesPath": "C:\\Users\\Anton\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\BL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jonas hestreus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -62,11 +28,190 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\GitHub\\RSS\\BL\\BL.csproj": {
-                "projectPath": "D:\\GitHub\\RSS\\BL\\BL.csproj"
+              "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\DAL1\\DAL.csproj": {
+                "projectPath": "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\DAL1\\DAL.csproj"
               },
-              "D:\\GitHub\\RSS\\Models\\Models.csproj": {
-                "projectPath": "D:\\GitHub\\RSS\\Models\\Models.csproj"
+              "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\Models\\Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\DAL1\\DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\DAL1\\DAL.csproj",
+        "projectName": "DAL",
+        "projectPath": "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\DAL1\\DAL.csproj",
+        "packagesPath": "C:\\Users\\Anton\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\DAL1\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\Models\\Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "System.ServiceModel.Syndication": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\Models\\Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\Models\\Models.csproj",
+        "projectName": "Models",
+        "projectPath": "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\Models\\Models.csproj",
+        "packagesPath": "C:\\Users\\Anton\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\PL\\PL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\PL\\PL.csproj",
+        "projectName": "PL",
+        "projectPath": "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\PL\\PL.csproj",
+        "packagesPath": "C:\\Users\\Anton\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\PL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\BL\\BL.csproj": {
+                "projectPath": "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\BL\\BL.csproj"
+              },
+              "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\Models\\Models.csproj"
               }
             }
           }
@@ -98,7 +243,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

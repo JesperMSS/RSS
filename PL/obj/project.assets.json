@@ -2,9 +2,20 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "System.ServiceModel.Syndication/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/System.ServiceModel.Syndication.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.ServiceModel.Syndication.dll": {}
+        }
+      },
       "BL/1.0.0": {
         "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "DAL": "1.0.0",
           "Models": "1.0.0"
         },
         "compile": {
@@ -14,8 +25,23 @@
           "bin/placeholder/BL.dll": {}
         }
       },
+      "DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Models": "1.0.0",
+          "System.ServiceModel.Syndication": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DAL.dll": {}
+        }
+      },
       "Models/1.0.0": {
         "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
         "compile": {
           "bin/placeholder/Models.dll": {}
         },
@@ -26,10 +52,43 @@
     }
   },
   "libraries": {
+    "System.ServiceModel.Syndication/5.0.0": {
+      "sha512": "xjwRFydlevI/DMLlBcDRbOmofJTZNoJ0FCkEPdMw9i+85lDbl8Pw001LJKQbRSeHSVJCEuPfAvEuC1TAumxcmw==",
+      "type": "package",
+      "path": "system.servicemodel.syndication/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.ServiceModel.Syndication.dll",
+        "lib/net461/System.ServiceModel.Syndication.xml",
+        "lib/netstandard2.0/System.ServiceModel.Syndication.dll",
+        "lib/netstandard2.0/System.ServiceModel.Syndication.xml",
+        "ref/net461/System.ServiceModel.Syndication.dll",
+        "ref/net461/System.ServiceModel.Syndication.xml",
+        "ref/netcoreapp2.1/System.ServiceModel.Syndication.dll",
+        "ref/netcoreapp2.1/System.ServiceModel.Syndication.xml",
+        "ref/netstandard2.0/System.ServiceModel.Syndication.dll",
+        "ref/netstandard2.0/System.ServiceModel.Syndication.xml",
+        "runtimes/win/lib/net461/System.ServiceModel.Syndication.dll",
+        "runtimes/win/lib/net461/System.ServiceModel.Syndication.xml",
+        "system.servicemodel.syndication.5.0.0.nupkg.sha512",
+        "system.servicemodel.syndication.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "BL/1.0.0": {
       "type": "project",
       "path": "../BL/BL.csproj",
       "msbuildProject": "../BL/BL.csproj"
+    },
+    "DAL/1.0.0": {
+      "type": "project",
+      "path": "../DAL1/DAL.csproj",
+      "msbuildProject": "../DAL1/DAL.csproj"
     },
     "Models/1.0.0": {
       "type": "project",
@@ -44,19 +103,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jonas hestreus\\.nuget\\packages\\": {}
+    "C:\\Users\\Anton\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\RSS\\PL\\PL.csproj",
+      "projectUniqueName": "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\PL\\PL.csproj",
       "projectName": "PL",
-      "projectPath": "D:\\GitHub\\RSS\\PL\\PL.csproj",
-      "packagesPath": "C:\\Users\\jonas hestreus\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\RSS\\PL\\obj\\",
+      "projectPath": "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\PL\\PL.csproj",
+      "packagesPath": "C:\\Users\\Anton\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\PL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jonas hestreus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -70,11 +129,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\GitHub\\RSS\\BL\\BL.csproj": {
-              "projectPath": "D:\\GitHub\\RSS\\BL\\BL.csproj"
+            "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\BL\\BL.csproj": {
+              "projectPath": "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\BL\\BL.csproj"
             },
-            "D:\\GitHub\\RSS\\Models\\Models.csproj": {
-              "projectPath": "D:\\GitHub\\RSS\\Models\\Models.csproj"
+            "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\Anton\\Documents\\GitHub\\RSS\\Models\\Models.csproj"
             }
           }
         }
@@ -106,7 +165,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
