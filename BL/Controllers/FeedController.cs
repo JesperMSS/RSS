@@ -22,6 +22,8 @@ namespace BL.Controllers
             return feedList;
         }
 
+
+
         public void Createfeed(string pName, string pUrl, string pCategory, string fReq)
         {
             if (validator.TextEmpty(pUrl))
@@ -32,7 +34,12 @@ namespace BL.Controllers
             }
         }
 
-        
-
+        public void deleteFeedasedOnCategory(string category)
+        {
+                   List<Feed> listFeed = feedRepository.GetAll();
+                   int i =  feedRepository.GetIndexOfCategory(category);
+                   feedRepository.Delete(i);
+                
+            }
     }
 }

@@ -44,7 +44,6 @@ namespace BL.Controllers
             
 
         public void updatCategory(Category oldCat, string newCategoryName)
-
         {
             int i = categoryRepository.GetIndexOfName(oldCat.CategoryName);
             Category newCategory = new Category(newCategoryName);

@@ -59,6 +59,7 @@ namespace FiGUI
             categoryController.createCategory("4");
             categoryController.createCategory("5");
             fillCategory();
+            Filltest();
 
 
         }
@@ -99,7 +100,7 @@ namespace FiGUI
             List<Feed> feedlist = feedController.getAllFeeds();
             foreach (var item in feedlist)
             {
-                episodeBox.Items.Add(item.Episodes);
+                episodeBox.Items.Add(item.Url);
             }
         }
         private void fillCategory()
@@ -123,10 +124,22 @@ namespace FiGUI
         {
             string categoryToDelete = categoryBox.GetItemText(categoryBox.SelectedItem);
             categoryController.deleteCategory(categoryToDelete);
+            feedController.deleteFeedasedOnCategory(categoryToDelete);
             fillCategory();
+            Filltest();
         }
 
         private void NameLBL_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Podcasts_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

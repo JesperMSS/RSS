@@ -14,7 +14,7 @@ namespace DAL.Repositories
         DataManager dataManager;
         List<Feed> listOfFeeds;
 
-        public FeedRepository()
+            public FeedRepository()
         {
             dataManager = new DataManager();
             listOfFeeds = new List<Feed>();
@@ -43,7 +43,6 @@ namespace DAL.Repositories
             catch (Exception)
             {
              
-
             }
                       
                 return listOfFeedDeserialized;
@@ -52,13 +51,9 @@ namespace DAL.Repositories
 
         public List<Episode> getEpisodes(string url)
         {
-
-
             XmlReader rssReader = XmlReader.Create(url);
             SyndicationFeed rssFeed = SyndicationFeed.Load(rssReader);
-
             List<Episode> allEpisodes = new List<Episode>();
-
             foreach (var item in rssFeed.Items)
             {
                 Episode episode = new Episode(item.Title.Text);
@@ -70,7 +65,16 @@ namespace DAL.Repositories
 
         public int GetIndexOfCategory(string name)
         {
-            throw new NotImplementedException();
+            int i = 0;
+            foreach (var feed in listOfFeeds)
+            {
+                if (name.Equals(feed.Category))
+                {
+                    break;
+                }
+                i++;
+            }
+            return i;
         }
 
         public int GetIndexOfName(string name)

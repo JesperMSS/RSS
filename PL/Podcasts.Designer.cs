@@ -147,7 +147,7 @@ namespace FiGUI
             // 
             // ctgDeleteBTN
             // 
-            this.ctgDeleteBTN.Location = new System.Drawing.Point(827, 261);
+            this.ctgDeleteBTN.Location = new System.Drawing.Point(827, 271);
             this.ctgDeleteBTN.Name = "ctgDeleteBTN";
             this.ctgDeleteBTN.Size = new System.Drawing.Size(75, 23);
             this.ctgDeleteBTN.TabIndex = 13;
@@ -157,7 +157,7 @@ namespace FiGUI
             // 
             // ctgSaveBTN
             // 
-            this.ctgSaveBTN.Location = new System.Drawing.Point(746, 261);
+            this.ctgSaveBTN.Location = new System.Drawing.Point(746, 271);
             this.ctgSaveBTN.Name = "ctgSaveBTN";
             this.ctgSaveBTN.Size = new System.Drawing.Size(75, 23);
             this.ctgSaveBTN.TabIndex = 12;
@@ -166,7 +166,7 @@ namespace FiGUI
             // 
             // ctgNewBTN
             // 
-            this.ctgNewBTN.Location = new System.Drawing.Point(665, 261);
+            this.ctgNewBTN.Location = new System.Drawing.Point(665, 271);
             this.ctgNewBTN.Name = "ctgNewBTN";
             this.ctgNewBTN.Size = new System.Drawing.Size(75, 23);
             this.ctgNewBTN.TabIndex = 11;
@@ -249,7 +249,7 @@ namespace FiGUI
             this.FeedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.06009F));
             this.FeedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.93991F));
             this.FeedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131F));
-            this.FeedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131F));
+            this.FeedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 132F));
             this.FeedTable.Location = new System.Drawing.Point(54, 73);
             this.FeedTable.Name = "FeedTable";
             this.FeedTable.RowCount = 2;
