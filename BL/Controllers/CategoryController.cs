@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using DAL;
 using Models;
 using DAL.Repositories;
+using System;
+using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace BL.Controllers
 {
@@ -19,10 +22,18 @@ namespace BL.Controllers
             validator = new Validering();
 
         }
-        public void createCategory(string name)
+        public void createCategory(string name) 
         {
-            Category newCategory = new Category(name);
-            categoryRepository.Create(newCategory);
+            if (validator.TextEmpty(name))
+            {
+                Category newCategory = new Category(name);
+                categoryRepository.Create(newCategory);
+            }
+            else
+            {
+                MessageBox.Show("Du´måste ge din categori ett namn");
+            }
+            
         }
         public List<Category> GetAllCategory()
         {

@@ -106,10 +106,12 @@ namespace PL
             categoryBox.Items.Clear();
             CategoryCombo.Items.Clear();
             List<Category> categoryList = categoryController.GetAllCategory();
+
             foreach (var item in categoryList)
             {
-                categoryBox.Items.Add(item.CategoryName);
-                CategoryCombo.Items.Add(item.CategoryName);
+
+                    categoryBox.Items.Add(item.CategoryName);
+                    CategoryCombo.Items.Add(item.CategoryName);
             }
         }
 
@@ -150,8 +152,27 @@ namespace PL
 
         private void ctgSaveBTN_Click(object sender, EventArgs e)
         {
-            categoryController.createCategory(ctgSaveTxt.Text);
-            fillCategory();
+            Boolean match = false; 
+            List<Category> allCategory = categoryController.GetAllCategory(); 
+               foreach (var category in allCategory)
+            {
+                if (category.CategoryName.Equals(ctgSaveTxt.Text))
+                {
+                     match = true;
+                     break;
+                }
+            }
+            if (match)
+            {
+                MessageBox.Show("Du har redan en kategori med namnet : " + ctgSaveTxt.Text);
+                var errorCG = new Form();
+            }
+            else
+            {
+                categoryController.createCategory(ctgSaveTxt.Text);
+                fillCategory();
+            }
+                
         }
     }
 }
